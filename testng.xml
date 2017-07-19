@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="SmokeTest">
+		<groups>
+			<run>
+				<include name="Smoke-Group" />
+			</run>
+		</groups>
+		<classes>
+			<class name="testNG.GroupingTestCases" />
+		</classes>
+	</test>
+	<test name="RegressionTest">
+		<groups>
+			<run>
+				<include name="Regression-Group" />
+			</run>
+		</groups>
+		<classes>
+			<class name="testNG.GroupingTestCases" />
+		</classes>
+	</test>
+	<test name="Sanity">
+		<groups>
+			<run>
+				<include name="Sanity-Group" />
+			</run>
+		</groups>
+		<classes>
+			<class name="testNG.GroupingTestCases" />
+		</classes>
+	</test>
+</suite> 
